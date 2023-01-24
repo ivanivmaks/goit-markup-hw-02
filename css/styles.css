@@ -1,0 +1,173 @@
+:root {
+  /* Iris #4d5ae5; */
+  --primary-brand-color: #4d5ae5;
+
+  /* Ocean #404bbf; */
+  --hover-color: #404bbf;
+
+  /* Navy-Blue #2e2f42; */
+  --title-color: #2e2f42;
+  --hero-bg-color: #2e2f42;
+
+  /* greeen #31d0aa; */
+  --footer-hover-color: #31d0aa;
+
+  /* Slate #434455; */
+  --text-color: #434455;
+
+  /* Light slate #8E8F99; */
+  --helped-color: #8e8f99;
+
+  /* Cornflower #E7E9FC; */
+  --accent-text: #e7e9fc;
+
+  /* Cloud #F4F4FD;  */
+  --team-bg-color: #f4f4fd;
+  --footer-span-color: #f4f4fd;
+
+  /* white */
+  --white: #ffffff;
+}
+
+/* body */
+body {
+  background-color: #ffffff;
+  color: var(--text-color);
+  font-family: "Roboto", sans-serif;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+/* Buttons */
+.button.primary {
+  background-color: var(--primary-brand-color);
+  color: var(--white);
+  cursor: pointer;
+}
+
+.button.primary:hover,
+.button.button.primary:focus {
+  background-color: var(--hover-color);
+  color: var(--white);
+}
+
+.button.secondary {
+}
+
+/* HEADER!!!!! */
+.header-logo {
+  font-family: "Raleway";
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-color);
+}
+
+.header-logo > span {
+  color: var(--primary-brand-color);
+}
+
+.header-link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--title-color);
+}
+
+.header-link:hover,
+.header-link:focus {
+  color: var(--hover-color);
+}
+
+.header-commerce {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: inherit;
+}
+
+.header-commerce:hover,
+.header-commerce:focus {
+  color: var(--hover-color);
+}
+
+/* MAIN!!!!! */
+/* hero */
+.hero {
+  background-color: var(--hero-bg-color);
+}
+
+.hero-title {
+  color: var(--white);
+}
+
+/* section */
+.section-title {
+  color: var(--title-color);
+}
+
+/* character */
+.character-list {
+  list-style: none;
+}
+
+.character-list .title {
+  color: var(--title-color);
+}
+
+/* what are we doing */
+.work-list {
+  list-style: none;
+}
+
+/* team */
+.team.section {
+  background-color: var(--team-bg-color);
+}
+
+.team-list {
+  list-style: none;
+}
+
+.team-list .title {
+  color: var(--title-color);
+}
+
+/* FOOTER!!!!! */
+.footer {
+  background-color: var(--title-color);
+}
+
+.footer-logo {
+  font-family: "Raleway";
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-brand-color);
+}
+
+.footer-logo > span {
+  color: var(--footer-span-color);
+}
+
+.footer-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--accent-text);
+}
+
+/* PORTFOLIO !!!!! */
