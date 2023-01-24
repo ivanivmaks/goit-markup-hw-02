@@ -34,6 +34,10 @@ body {
   background-color: #ffffff;
   color: var(--text-color);
   font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 
 .list {
@@ -45,19 +49,23 @@ body {
 }
 
 /* Buttons */
-.button.primary {
+.primary-btn {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
   background-color: var(--primary-brand-color);
   color: var(--white);
   cursor: pointer;
 }
 
-.button.primary:hover,
-.button.button.primary:focus {
+.primary-btn:hover,
+.primary-btn:focus {
   background-color: var(--hover-color);
-  color: var(--white);
 }
 
-.button.secondary {
+.secondary-btn {
 }
 
 /* HEADER!!!!! */
@@ -77,28 +85,20 @@ body {
 
 .header-link {
   font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
   color: var(--title-color);
 }
 
 .header-link:hover,
-.header-link:focus {
+.header-link:focus,
+.header-link.current,
+.header-commerce:hover,
+.header-commerce:focus {
   color: var(--hover-color);
 }
 
 .header-commerce {
   font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
   color: inherit;
-}
-
-.header-commerce:hover,
-.header-commerce:focus {
-  color: var(--hover-color);
 }
 
 /* MAIN!!!!! */
@@ -108,39 +108,56 @@ body {
 }
 
 .hero-title {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  text-align: center;
   color: var(--white);
 }
 
-/* section */
+/* section titles */
 .section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
   color: var(--title-color);
+}
+
+.title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--title-color);
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 
 /* character */
-.character-list {
-  list-style: none;
-}
-
-.character-list .title {
-  color: var(--title-color);
-}
 
 /* what are we doing */
-.work-list {
-  list-style: none;
+.work.section-title {
+  text-transform: capitalize;
 }
 
 /* team */
-.team.section {
+.team {
   background-color: var(--team-bg-color);
-}
-
-.team-list {
-  list-style: none;
-}
-
-.team-list .title {
-  color: var(--title-color);
 }
 
 /* FOOTER!!!!! */
@@ -163,10 +180,6 @@ body {
 }
 
 .footer-text {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
   color: var(--accent-text);
 }
 
