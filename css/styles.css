@@ -189,7 +189,7 @@ body {
   color: var(--primary-brand-color);
 }
 
-.footer-logo > span {
+.footer-accent {
   color: var(--footer-span-color);
 }
 
